@@ -1,0 +1,16 @@
+footer {
+    height: 198px;
+
+    >div {
+        &:first-child {
+            height: 40%;
+        }
+
+        &:last-child {
+            div {
+                margin-left: 50%;
+                @include text($size: 0.55em, $opacity: 0.6);
+            }
+        }
+    }
+}

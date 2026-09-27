@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+    body>* {
+        padding: 0 40px !important;
+    }
+
+    :root {
+        font-size: 28px;
+    }
+
+    .contact .input-box {
+        grid-template-rows: 420px 1fr;
+    }
+
+    .inbox>div img {
+        &:nth-child(4) {
+            width: 320px
+        }
+
+        &:nth-child(6) {
+            width: 220px;
+        }
+    }
+}

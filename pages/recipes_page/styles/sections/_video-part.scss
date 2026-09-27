@@ -1,0 +1,49 @@
+.video-part {
+    height: 600px;
+
+    .video {
+        width: 840px;
+
+        .icon {
+            &:hover {
+                border-color: lighten($color: $primaryColor, $amount: 50)
+            }
+
+            &:active {
+                opacity: 0.5;
+            }
+
+            img {
+                width: 120px;
+            }
+        }
+    }
+
+    .nutrition {
+        width: 400px;
+        background-color: $primaryColor;
+
+        h2 {
+            @include text($size: 24px, $weight: 600, $space: -4%);
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                p {
+                    @include text($size: 18px, $opacity: 0.6, $weight: 500, $space: -4%);
+                }
+
+                h6 {
+                    @include text($size: 18px, $weight: 500, $space: -4%);
+                }
+            }
+        }
+
+        .last-info {
+            @include text($height: 28px, $weight: 400, $opacity: 0.6);
+        }
+    }
+
+}

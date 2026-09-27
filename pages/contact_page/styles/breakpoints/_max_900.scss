@@ -1,0 +1,59 @@
+@media (max-width: 900px) {
+    body>* {
+        padding: 0 30px !important;
+    }
+
+    :root {
+        font-size: 24px;
+    }
+
+    header .navbar {
+        display: none !important;
+    }
+
+    .contact .input-box {
+        grid-template-rows: 340px 1fr;
+    }
+
+    .inbox>div {
+        .d-flex {
+            height: 60px;
+
+        }
+
+        img {
+            &:nth-child(4) {
+                width: 250px
+            }
+
+            &:nth-child(6) {
+                width: 180px;
+            }
+        }
+    }
+
+    footer {
+        height: 130px;
+
+        .first-part {
+            div {
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+        }
+
+        .last-part {
+            flex-direction: column;
+            gap: 0.5em;
+
+            div {
+                margin-left: 0 !important;
+                transform: translate(0, 0) !important;
+            }
+
+            ul {
+                margin-left: 0 !important;
+            }
+        }
+    }
+}

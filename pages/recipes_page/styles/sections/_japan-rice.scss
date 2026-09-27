@@ -1,0 +1,40 @@
+.japan-rice {
+    h1 {
+        @include text($size: 64px, $weight: 600, $space: -4%);
+    }
+
+    .last-need {
+        img {
+            width: 50px;
+        }
+
+        h4 {
+            @include text($size: 16px, $weight: 700, $space: -2%);
+        }
+
+        p {
+            @include text($size: 14px, $weight: 500, $opacity: 0.6, $space: -2%);
+        }
+
+        h5 {
+            @include text($size: 12px, $weight: 500, $space: 10%);
+        }
+    }
+
+    .right-buttons {
+        bottom: -30px;
+        .col {
+            width: 80px;
+            height: 120px;
+
+            button {
+                height: 80px;
+                width: 80px;
+            }
+
+            h6 {
+                @include text($size: 12px, $space: 10%, $weight: 500);
+            }
+        }
+    }
+}

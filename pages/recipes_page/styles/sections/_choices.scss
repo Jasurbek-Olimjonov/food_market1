@@ -1,0 +1,95 @@
+.choices {
+    .left {
+        width: 840px;
+
+        h4 {
+            @include text($size: 36px, $space: -4%, $weight: 600);
+        }
+
+        h5 {
+            @include text($size: 24px, $weight: 600, $space: -4%);
+        }
+
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        li {
+            @include text($size: 18px, $space: -2%);
+
+            .form-check-input:checked {
+                background-color: #000;
+                border-color: #000;
+            }
+
+            .form-check-input:checked~.form-check-label {
+                text-decoration: line-through;
+                opacity: 0.2;
+            }
+
+            .form-check-input:focus {
+                box-shadow: none;
+                outline: none;
+                border-color: grey;
+            }
+
+        }
+
+        .third {
+
+            .recipe-list {
+                counter-reset: recipe;
+
+                li {
+                    counter-increment: recipe;
+
+                    label {
+                        @include text($size: 24px, $space: -2%, $weight: 600);
+
+                        &::before {
+                            content: counter(recipe) ".";
+                        }
+                    }
+
+                    .content {
+                        p {
+                            @include text($space: -2%, $height: 26px, $opacity: 0.6);
+                        }
+                    }
+
+                    .kitchen-image {
+                        height: 420px;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 400px;
+
+        .first {
+            h3 {
+                @include text($size: 32px, $space: -4%, $weight: 600);
+            }
+
+            ul li {
+                height: 120px;
+
+                span {
+                    width: 180px;
+                }
+
+                h4 {
+                    @include text($size: 20px, $height: 28px, $space: -4%, $weight: 600);
+                }
+
+                p {
+                    @include text($size: 14px, $weight: 500, $space: -2%, $opacity: 0.6);
+                }
+            }
+        }
+    }
+}

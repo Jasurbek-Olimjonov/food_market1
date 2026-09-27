@@ -1,0 +1,48 @@
+body>* {
+    padding: 0 80px !important;
+    margin: 0 auto;
+    max-width: 2000px;
+    min-width: 405px;
+}
+
+:root {
+    font-size: 32px;
+}
+
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./utils/utilities";
+
+@import "./sections/footer";
+@import "./sections/header";
+@import "./sections/inbox";
+@import "./sections/last-recipe";
+@import "./sections/contact";
+
+
+* {
+    padding: 0;
+    font-family: "Inter";
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.row,
+.container,
+ul,
+li span {
+    margin: 0;
+    padding: 0;
+}
+
+@import "./breakpoints/min_1700";
+@import "./breakpoints/max_1200";
+@import "./breakpoints/max_900";
+@import "./breakpoints/max_670";

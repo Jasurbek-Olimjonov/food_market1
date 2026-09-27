@@ -1,0 +1,66 @@
+.no-margin {
+    margin: $needMargin;
+}
+
+.no-padding {
+    padding: $needPadding;
+}
+
+.ally-color {
+    color: $allyColor;
+    font-size: inherit;
+}
+
+.my-bg {
+    background-color: $primaryColor;
+}
+
+.d-p {
+    @include text($height: 28px, $size: 0.5em, $opacity: 0.6, $weight: 400);
+}
+
+.l-p {
+    @include text($size: 0.45em, $space: -2%, $opacity: 0.6, $weight: 500);
+}
+
+.b-p {
+    @include text($size: 0.5em, $space: -2%, $weight: 500);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: $letter-space;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.74em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.75em;
+}
+
+h6 {
+    font-size: 0.5em;
+}
+
+.h6 {
+    font-size: 0.75em !important;
+}
